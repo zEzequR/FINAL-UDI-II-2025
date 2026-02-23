@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "username": "admin",
+        "email": "admin@admin.com",
+        "password": "admin"
+    },
+    
+    {
+        "id": "2",
+        "username": "ezequiel",
+        "email": "ezequiel.ramos@institutozonaoeste.edu.ar",
+        "password": "ezePrueba"
+    },
+
+    {
+        "id": "3",
+        "username": "juan",
+        "email": "juan123@gmail.com",
+        "password": "juan123"
+    }
+]

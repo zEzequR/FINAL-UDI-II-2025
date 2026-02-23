@@ -1,0 +1,47 @@
+[
+    {
+        "motivo": "Bienvenida",
+        "codigo": "BIENVENIDA10",
+        "porcentaje": "10"
+    },
+    {
+        "motivo": "Primer Compra",
+        "codigo": "1COMPRA",
+        "porcentaje": "15"
+    },
+    {
+        "motivo": "Black Friday",
+        "codigo": "BLACK50",
+        "porcentaje": "50"
+    },
+    {
+        "motivo": "Cyber Monday",
+        "codigo": "CYBERMONDAY",
+        "porcentaje": "45"
+    },
+    {
+        "motivo": "Estudiantes",
+        "codigo": "ALUMNO",
+        "porcentaje": "20"
+    },
+    {
+        "motivo": "Cumpleaños",
+        "codigo": "FELIZCUMPLEAÑOS",
+        "porcentaje": "25"
+    },
+    {
+        "motivo": "Fidelidad",
+        "codigo": "30OFF",
+        "porcentaje": "30"
+    },
+    {
+        "motivo": "Referido",
+        "codigo": "REFERIDO",
+        "porcentaje": "15"
+    },
+    {
+        "motivo": "Outlet",
+        "codigo": "OUTLET",
+        "porcentaje": "60"
+    }
+]

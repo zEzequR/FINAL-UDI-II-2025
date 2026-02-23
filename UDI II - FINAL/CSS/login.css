@@ -1,0 +1,287 @@
+/* ----------------FUENTE---------------- */
+@font-face {
+    font-family: 'Apple';
+    src: url('fonts/SF-Pro.ttf');
+}
+
+/* ----------------TODO---------------- */
+
+*
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ----------------BODY---------------- */
+
+body
+{
+    background-color: black;
+    scrollbar-color: #6951c1 transparent;
+    animation-name: fadeInX;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+
+.fade-out {
+    animation: fadeOutX 0.6s ease-in forwards;
+}
+
+/* ----------------HEADER---------------- */
+header
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 15px;
+    height: 10vw;
+}
+
+#cartImg
+{
+    width: 50px;
+    height: auto;
+    color: #0077C8;
+}
+
+#nameTxt
+{
+    font-style: italic;
+}
+
+/* ----------------LOGIN---------------- */
+
+form
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 80vh;
+}
+
+.labels
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#wlcTxt
+{
+    font-size: 50px;
+}
+
+#descTxt
+{
+    font-size: 18px;
+    font-style: italic;
+    color: gray;
+}
+
+.inputs input
+{
+    width: 250px;
+    height: 38px;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    transition: all 0.6s ease-in-out;
+}
+
+.inputs input::placeholder
+{
+    color: #0077C8;
+    font-family: 'Apple', sans-serif;
+    font-weight: bold;
+}
+
+#loginBtn
+{
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0077C8;
+    color: white;
+    box-shadow: 0 0 0px 0 #41b3ff;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+#emailInp:focus
+{
+    outline: none;
+    animation-name: borderAppear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    scale: 1.04;
+}
+
+#passwrdInp:focus
+{
+    outline: none;
+    animation-name: borderAppear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    scale: 1.06;
+}
+
+#loginBtn:hover
+{
+    background-color: #0077C8;
+    box-shadow: 0 0 20px 0 #41b3ff;
+    scale: 1.06;
+}
+
+#loginBtn:focus
+{
+    background-color: #0077C8;
+    box-shadow: 0 0 20px 0 #41b3ff;
+    scale: 1.06;
+}
+
+#advertencia
+{
+    background-color: #ff2323;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 35vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 #ff2323;
+    gap: 10px;
+}
+
+#advertencia[hidden]
+{
+    display: none;
+}
+
+.desvanecer
+{
+    animation: advDissapear 3s ease-in forwards;
+}
+
+
+/* ----------------FOOTER---------------- */
+footer
+{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.txts
+{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#izoLogo
+{
+    width: 70px;
+}
+
+#izoLogo2
+{
+    width: 70px;
+}
+
+/* ---------------ANIMATIONS--------------- */
+@keyframes fadeInX {
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-12px);
+        overflow-y: hidden;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+        overflow-y: hidden;
+    }
+}
+
+@keyframes fadeOutX {
+    0%
+    {
+        opacity: 1;
+        transform: translateX(0px);
+        overflow-y: hidden;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translateX(12px);
+        overflow-y: hidden;
+    }
+}
+
+@keyframes borderAppear {
+    0%
+    {
+        border: 3px solid transparent;
+        box-shadow: 0 0 20px 0 transparent;
+    }
+    100%
+    {
+        border: 3px solid #0077C8;
+        box-shadow: 0 0 20px 0 #41b3ff;
+    }
+}
+
+@keyframes advAppear {
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes advDissapear {
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
