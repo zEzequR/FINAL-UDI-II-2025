@@ -47,7 +47,7 @@ async function iniciarSesion(event)
             void adv.offsetWidth;
             adv.classList.add("desvanecer");
 
-            document.getElementById("emailInp").focus() = "";
+            document.getElementById("emailInp").focus();
         }
 }
 

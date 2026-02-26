@@ -442,6 +442,7 @@ document.addEventListener("click", (e) => {
             cartcounter("restar");
             descuentoActivo = 0;
             renderizarCarrito();
+            document.getElementById("applyBtn").click();
         }
 });
 
